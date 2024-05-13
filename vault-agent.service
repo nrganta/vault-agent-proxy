@@ -1,0 +1,8 @@
+[Unit]
+Description=HashiCorp Vault Agent Service
+
+[Service]
+ExecStart=/bin/bash -c '`which node` /home/nag/vault-agent-proxy/restart-agent.sh
+
+[Install]
+WantedBy=multi-user.target
